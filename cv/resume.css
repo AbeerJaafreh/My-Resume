@@ -4,13 +4,7 @@ body{
 			margin: 0 auto;
 			margin-bottom: 0.5cm;
 			box-shadow: 0 0 0.1cm ;
-			/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f1f1f1+50,e1e1e1+51,f6f6f6+100;White+Gloss+%231 */
-			background: rgb(255,255,255); /* Old browsers */
-			background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%); /* FF3.6-15 */
-			background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
-			background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
+			
 		}
 
 		.head{
@@ -30,6 +24,7 @@ body{
 			margin-right: 50px;
 			margin-left: 25px;
 
+
 		}
 
 		img{
@@ -45,18 +40,20 @@ body{
 		
 
 		.content{
-			display: grid;
-			grid-template-columns: 2fr 1fr;
+			display: flex;
 			padding-top: 25px;
 		}
 
 		.first-content{
 			display: grid;
 			margin-left:30px;
-    		grid-template-columns: 500px;
-    		grid-template-rows: 1fr 1fr 1fr;
-    		padding-top: 48PX;
-
+    		grid-template-columns: 380px;
+    		
+/*    		padding-top: 0PX;
+*/
+		}
+		.discription{
+			font-size: 24px;
 		}
 		.item{
 			display: grid;
@@ -65,6 +62,14 @@ body{
 
 		h2 {
 		    border-top: 1px solid blue;
+		    margin-right:20px;
+		    text-shadow: 1px 2px 5px #72A6E0;
+		}
+		h1{
+			font-family: 'Acme', sans-serif;
+			font-size: 40px;
+			word-spacing:12px;
+
 		}
 		.footer {
 		    position: relative;
@@ -74,8 +79,18 @@ body{
 			background-image: url("background.jpg");
 		    color: white;
 		    text-align: center;
-		    height: 85px;
+		    height: 50px;}
 
-		  }
 		  a:hover{color:hotpink;}
-		  a{color:white;}
+		  footer>div{
+		  	padding:10px;
+		  	color:white;
+		  	font-size: 18px;
+		  	text-shadow: 1px 1px 10px black;
+		  font-weight: bold;}
+		a{color:white;}
+		progress{
+				height: 10px;
+				float: right;
+
+				}
